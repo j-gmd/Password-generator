@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.conteudo {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+    padding: 0px;
+}
+  
+body {
+    margin: 80px 150px 100px 150px;
+}
+.topo {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: hsl(236, 13%, 42%);
+    font-family: "Inter", sans-serif;
+}
+.corpo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        margin-bottom: 65px;
+}
+.esq {
+    margin: 0px;
+    width: 650px;
+    height: 450px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.conteudo_esq {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: stretch;
+}
+.conteudo_esq >div{
+    flex: 1;
+}
+.titulo_esq{
+    color: hsl(240, 100%, 5%);
+    font-family: "Inter", sans-serif;
+    font-size: 45px;
+    font-weight: 800;
+    margin-right: 30px;
+}
+.texto_esq {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: hsl(236, 13%, 42%);
+    align-content: flex-start;
+}
+p{
+    display: flex;
+    color: hsl(236, 13%, 42%);
+    font-family: "Inter-Regular";
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.7;
+}
+#botao {
+   display: flex;
+   justify-content: center;
+   padding: 10px 20px 10px 20px;
+   width: 120px;
+   text-decoration: none;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   margin: 0px;
+   color: hsl(36, 100%, 99%);
+   background-color: hsl(5, 85%, 63%);
+   font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.dir {
+    background-color: hsl(240, 100%, 5%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 20px 0px 20px;
+    margin-left: 10px;
+}
+.secoes_dir {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    align-self: stretch;
+}
+.noticias, .noticia_3{
+    color: hsl(233, 8%, 79%);
+    border-bottom: 1px solid hsl(233, 8%, 79%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 18px;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2;
+}
+.noticia_3 {
+    border-bottom: hidden;
+}
+.noticias >div{
+    flex: 1;}
+
+.titulo_dir{
+    color: hsl(35, 77%, 62%);
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    }
+.titulo_noticias{
+    color: hsl(36, 100%, 99%);
+    font-family: "Inter", sans-serif;
+    padding-top: 18px;
+    font-size: 17px;
+    font-weight: 700;
+}
+.barra_inferior{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.barra_inferior >div{
+    flex: 1;
+}
+.inferior_box{
+    display: flex;
+    height: 137px;
+    flex-direction: row;
+    gap: 15px;
+}
+.conteudo_inferior{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:10px;
+}
+.conteudo_inferior >div{
+    flex: 1;
+}
+.h2{
+    font-weight: bold;
+    color: hsl(233, 8%, 79%);
+    display: flex;
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    transform: scaleY(1.1);
+}
+.titulo_inferior {
+    font-weight: bold;
+    color: hsl(240, 100%, 5%);
+    display: flex;
+    padding-top: 5px;
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+}
+.texto_inferior{
+    font-size: 15px;
+}
