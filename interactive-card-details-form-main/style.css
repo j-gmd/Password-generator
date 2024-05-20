@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+*{
+box-sizing: border-box;
+margin: 0px;
+padding: 0px;
+font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.hidden{
+  display: none !important;
+}
+.error{
+  border: 2px solid hsl(0, 100%, 66%);
+}
+.error_message{
+gap: 0;
+}
+.error_message::after{
+  content: "É obrigatório preencher este campo.";
+  color: hsl(0, 100%, 66%);
+  margin-top: .2rem;
+}
+
+.main_container{
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./images/bg-main-desktop.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 34% 100%;
+}
+
+.main_content{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.cards{
+  position: absolute;
+  top: 23%;
+  display: flex;
+flex-direction: column;
+gap: 35px;
+}
+
+.front_card{
+  position:relative;
+}
+
+.card_logo{
+position: absolute;
+top: 1rem;
+left: 2rem;
+}
+
+#card_number{
+  position: absolute;
+  color: hsl(0, 0%, 100%);
+  bottom: 5rem;
+  left: 2rem;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+.card_info {
+  color: hsl(0, 0%, 100%);
+  position:absolute;
+  bottom: 2rem;
+  left: 2rem;
+  right: 2rem;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+.card_name{
+  letter-spacing: 1px;
+}
+
+.back_card{
+  position: relative;
+  left: 20%;
+}
+
+.card_security_code{
+  color: hsl(270, 3%, 87%);
+  position: absolute;
+  right: 3.5rem;
+  top: 7rem;
+}
+
+.form{
+  margin-left: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.form button{
+  display: block;
+  grid-column: 2 span;
+  font-size: 18px;
+  height: 50px;
+  border-radius: 6px;
+  color:hsl(0, 0%, 100%);
+  background-color: hsl(278, 68%, 11%);
+  cursor: pointer;
+}
+.form form{
+  display: grid;
+  gap: 1rem;
+  width: 350px;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(4,1fr);
+}
+
+.form label{
+  color: hsl(278, 68%, 11%);
+  margin-bottom: .3rem;
+  text-transform: uppercase;
+  display: block;
+  letter-spacing: 1px;
+}
+input{
+  padding: .5rem;
+  font-size: 18px;
+border: 1px solid hsl(270, 3%, 87%);
+border-radius: 6px;
+}
+
+input::placeholder{
+  font-family: inherit;
+  color: hsl(270, 3%, 87%);
+}
+
+.cardholder_name {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2 span;
+}
+.main_number {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2 span;
+}
+.card_information {
+  display: flex;
+  flex-direction: row;
+  grid-column: 2 span;
+  gap: 1rem;
+}
+.month_year {
+  display: flex;
+  flex-direction: row;
+  grid-column: span 1;
+  gap: 1rem;
+}
+
+.card_date {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 1;
+}
+.card_date .month_year{
+  display: flex;
+}
+.month_year div{
+  flex-direction: column;
+}
+.card_date div input{
+  width: 70px;
+  margin-inline: .5rem;
+  margin-left: 0;
+}
+#cvc {
+  width: 100%;
+}
+
+button {
+  display: block;
+}
+
+.complete_stage{
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.complete_stage h1{
+  text-transform: uppercase;
+letter-spacing: 3px;
+}
+.complete_stage p{
+font-size: 18px;
+color: hsl(279, 6%, 55%);
+}
+.complete_stage button{
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  border-radius:6px;
+  padding: 1rem;
+  font-size: 18px;
+  background-color: hsl(278, 68%, 11%);
+  cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 1023px){
+  .front_card, .front_card img, .back_card, .back_card img{
+    width: 300px;
+  }
+  .card_content .card_logo{
+    width: 50px;
+  }
+  #number{
+    font-size: 1.1rem;
+  }
+  #cvc{
+    top: 42%;
+    right: 12%;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .main_content{
+    flex-direction: column;
+  }
+  .front_card, .front_card img, .back_card, .back_card img{
+    width: 280px;
+  }
+  .cards {
+    width: 100%;
+    min-height: 30vh;
+    background-image: url("./images/bg-main-mobile.png");
+  }
+  .back_card{
+    transform: translateY(70px);
+  }
+  .front_card{
+    z-index: 100;
+  }
+  .form{
+    margin-top: 6rem;
+  }
+}
