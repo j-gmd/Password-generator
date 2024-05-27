@@ -8,21 +8,58 @@
 </head>
 
 <body>
+  <div class="main_container">
+    <div class="main_content">
+  <div class="title">Password Generator </div>
+  <div class="password_box">blablabla </div>
+  <div class="generator_box"> 
+    <div class="length_box"> 
+      <div class="length_title"> 
+        <span>Character Length</span>
+        <span id="value">0</span>
+      </div>
+       <div class="length_slider">
+         <input type="range" min="0" max="20" value="0" id="slider">
+    </div>
+      </div>
 
-Password Generator
+    <div class="checkboxes"> 
+      <form>
+        <div class="uppercase">
+        <input type="checkbox" id="uppercase">
+        <label for="uppercase">Include Uppercase Letters</label>
+          </div>
+        <div class="lowercase">
+        <input type="checkbox" id="lowercase">
+        <label for="lowercase">Include Lowercase Letters</label>
+        </div>
+        <div class="numbers">
+        <input type="checkbox" id="numbers">
+        <label for="numbers">Include Numbers</label>
+        </div>
+        <div class="symbols">
+        <input type="checkbox" id="symbols">
+        <label for="symbols">Include Symbols</label>
+      </div>
+      </form>
+    </div>
+    
+    <div class="strength_box"> 
+      <div class="strength_title"> Strength </div> 
+       <div> M </div>
+      </div> 
+  <!-- Too weak, Weak, Medium, Difficult. -->
 
-Character Length
+    <!-- <div class="button"> 
+      <input type="button" value="Generate"> </div> -->
+    <button class="button">
+      Generate
+      <img src="./arrow_forward_24dp_FILL0_wght400_GRAD0_opsz24 (1).png" alt="arrow" width="13px" height="13px">
+    </button>
+  </div>
+    </div>
+    </div>
 
-Include Uppercase Letters
-Include Lowercase Letters
-Include Numbers
-Include Symbols
-
-Strength 
-<!-- Too weak, Weak, Medium, Difficult. -->
-
-Generate
-
-    <script src="app.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
