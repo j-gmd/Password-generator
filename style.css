@@ -91,6 +91,41 @@ text-decoration: none;
   background-color: #24232b;
 }
 
+/*customização dos checkboxes*/
+.checkboxes{
+  display: flex;
+  align-items: center;
+}
+.checkboxes label{
+  cursor: pointer;
+  display: flex;
+}
+.checkboxes input[type='checkbox']{
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+}
+.checkboxes label::before {
+  content: '';
+  width: 1em;
+  height: 1em;
+  border-radius: .15em;
+  margin-right: 1em;
+  border: .18em solid #c9c8ce;
+}
+.checkboxes label:hover::before, .checkboxes input[type='checkbox']:hover + label::before {
+  border-color: #a3fdab;
+}
+.checkboxes input[type='checkbox']:checked + label::before {
+  content: '\002714';
+  background-color: #a3fdab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #18171f;
+  border-color: #a3fdab;
+}
+
 .strength_box{
   padding: 15px;
   margin: 0px 20px 0px 20px;
