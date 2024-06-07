@@ -1,19 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
-html, body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-@media (max-width: 768px) {
-  .main_content {
-    max-width: 90%; /* Ajuste para telas menores */
-    height: auto; /* Ajuste a altura para telas menores */
-  } 
-}
 *{
 box-sizing: border-box;
 margin: 0px;
@@ -33,10 +20,9 @@ text-decoration: none;
   align-items: center;
   background-color: #0d0c12;
 }
-/*width: 35%; MUDANCA, add 2 primeiras linhas*/
+
 .main_content{
-  width: 100%;
-  max-width: 35%;
+  width: 35%;
   height: 80%;
   display: flex;
   flex-direction: column;
@@ -58,7 +44,7 @@ text-decoration: none;
 }
 
 .password_box{
-  padding: 20px;
+  padding: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,8 +57,6 @@ text-decoration: none;
 }
 
 .generator_box{
-  width: 100%;
-  /*MUDANCA*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -91,79 +75,6 @@ text-decoration: none;
 }
 
 /*customizando o slider range*/
-/* Base styles for the slider */
-input[type=range].styled-slider {
-  width: 100%;
-  height: 2.2em;
-  -webkit-appearance: none;
-  appearance: none;
-}
-
-/* Progress support */
-input[type=range].styled-slider.slider-progress {
-  --range: calc(var(--max) - var(--min));
-  --ratio: calc((var(--value) - var(--min)) / var(--range));
-  --sx: calc(0.5 * 19px + var(--ratio) * (100% - 19px));
-  /*--sx: calc(0.5 * 2em + var(--ratio) * (100% - 2em));*/
-}
-
-input[type=range].styled-slider:focus {
-  outline: none;
-}
-
-/* Webkit styles */
-input[type=range].styled-slider::-webkit-slider-thumb {
-  width: 19px; 
-    height: 19px; 
-    background: #c9c8ce;
-    cursor: pointer; 
-    border: none; 
-    border-radius: 50%; 
-  margin-top: -6px;
-  -webkit-appearance: none;
-}
-
-input[type=range].styled-slider::-webkit-slider-runnable-track {
-  background: #18171f; 
-    border-radius: 0px;
-  height: 6px;
-  /*
-  height: 1em;
-  border-radius: 0.5em;
-  background: #efefef;
-  border: 1px solid #b2b2b2;
-  box-shadow: none;*/
-}
-
-input[type=range].styled-slider:hover::-webkit-slider-runnable-track {
-  background: #e5e5e5;
-  border-color: #9a9a9a;
-}
-
-input[type=range].styled-slider:active::-webkit-slider-runnable-track {
-  background: #18171f;
-  border-color:  #18171f;
-}
-
-input[type=range].styled-slider.slider-progress::-webkit-slider-runnable-track {
-  background: linear-gradient(#a3fdab, #a3fdab) 0/var(--sx) 100% no-repeat, #18171f;
-  height: 6px;
-}
-
-input[type=range].styled-slider.slider-progress:hover::-webkit-slider-runnable-track {
-  background: linear-gradient(#a3fdab, #a3fdab) 0/var(--sx) 100% no-repeat, #18171f;
-  height: 6px;
-}
-
-input[type=range].styled-slider.slider-progress:active::-webkit-slider-runnable-track {
-  background: linear-gradient(#a3fdab, #a3fdab) 0/var(--sx) 100% no-repeat, #18171f;
-  height: 6px;
-}
-.length_slider input[type="range"]::-webkit-slider-thumb:hover {
-background: #24232b;
-  border: 2px solid #a3fdab;
-}
-/*
 .length_slider{
   margin: 10px;
   display: flex;
@@ -179,7 +90,6 @@ background: #24232b;
   border: none;
   display: flex;
   align-items: center;
-  background: linear-gradient(to right, #a3fdab 0%, #a3fdab var(--slider-value), #24232b var(--slider-value), #24232b 100%);
 }
 .length_slider input[type="range"]::-webkit-slider-runnable-track {
     background: #18171f; 
@@ -200,7 +110,7 @@ background: #24232b;
 .length_slider input[type="range"]::-webkit-slider-thumb:hover {
 background: #24232b;
   border: 2px solid #a3fdab;
-}*/
+}
 
 .length_title{
   display: flex;
@@ -311,3 +221,17 @@ background: #24232b;
 .button:hover .button_icon {
   color: #a3fdab;
 }
+
+/*
+-icone de forca da senha?
+
+responsividade: 
+- tablet
+- celular
+
+jsx:
+-criador das senhas;
+-activestate slider range
+-forca da senha;
+-copia e cola;
+*/
