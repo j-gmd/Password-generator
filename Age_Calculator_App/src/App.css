@@ -69,7 +69,8 @@ html {
 }
 
 .input_box input:focus {
-  color: hsl(259, 100%, 65%);
+  border-color: hsl(259, 100%, 65%);
+  color: hsl(0, 0%, 8%);
 }
 
 .error_message {
